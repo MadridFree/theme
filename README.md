@@ -4,13 +4,13 @@ Esto es un theme de Wordpress hecho para [MadridFree.org](http://madridfree.org)
 
 ### Detalles técnicos
 
-** HTML/CSS **
+**HTML/CSS**
 
 - Funciona gracias a SASS
 - Nomenclatura BEM
 - Mobile first
 
-** Compilar SASS **
+**Compilar SASS**
 
 ```
 brew install --devel sass/sass/sass
@@ -19,7 +19,7 @@ sass -wc madirdfree
 
 ### Créditos
 
-** Alex M. Gorgal **
+**Alex M. Gorgal**
 
 - [alex@madridfree.org](mailto:alex@madridfree.org)
 - [twitter.com/gruncho](http://github.com/gruncho)

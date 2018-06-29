@@ -1,6 +1,6 @@
 # MadridFree theme
 
-Esto es un theme de Wordpress hecho para [MadridFree.org](http://madridfree.org), está adaptado a nuestro contenido pero en algún momento subiré una versión default sin logotipo, anuncios etc.
+Esto es un theme de Wordpress hecho para [MadridFree.org](http://madridfree.org), está adaptado a nuestro contenido pero en algún momento subiré una versión default sin logotipo, anuncios etc, para que lo pueda utilizar todo el mundo.
 
 ### Detalles técnicos
 

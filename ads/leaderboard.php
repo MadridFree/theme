@@ -1,0 +1,1 @@
+<div class="ads ads--centered" style="width:728px;height:90px;"></div>

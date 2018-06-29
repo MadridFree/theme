@@ -1,0 +1,77 @@
+.restaurantes-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.restaurantes-list__link {
+  display: block;
+  text-decoration: none;
+  transition: transform .4s;
+}
+
+.restaurantes-list__link:hover {
+  transform: translateY(-7px);
+
+  .restaurantes-list__picture {
+    box-shadow: $box-shadow-thumbnail;
+  }
+}
+
+.restaurantes-list__article {
+  flex: 0 1 45%;
+  padding-bottom: 2rem;
+}
+
+.restaurantes-list__picture {
+  @include aspect-ratio(3,2);
+
+  margin-bottom: .75rem;
+  transition: box-shadow .2s;
+}
+
+.restaurantes-list__title {
+  font-family: $font-family-third;
+  font-size: 1rem;
+  padding-bottom: 1rem;
+
+  a {
+    color: $color-black;
+    text-decoration: none;
+  }
+}
+
+.restaurantes-list__icons {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding-bottom: .5rem;
+}
+
+.restaurnates-list__icon--01 {
+  background: transparent url('assets/svg/covered.svg') center no-repeat;
+  background-size: 100%;
+}
+
+.restaurantes-list-li {
+  color: $color-ligth-gray;
+  font-family: $font-family-first;
+  font-size: .75rem;
+  flex: 0 1 50%;
+}
+
+.restaurantes-list-li--price {
+  font-family: $font-family-third;
+  text-align: right;
+}
+
+
+@media #{$breakpoints-large} {
+  .restaurantes-list__article {
+    flex: 0 1 30%;
+  }
+
+  .restaurantes-list__title {
+    font-size: 1.25rem;
+  }
+}

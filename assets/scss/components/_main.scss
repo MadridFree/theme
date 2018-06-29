@@ -1,0 +1,125 @@
+$main-color: $color-dark-gray;
+$main-font-family: $font-family-first;
+$main-title-font-family: $font-family-second;
+$main-a-color: $color-corporative;
+$main-blockquote-font-family: $font-family-second;
+
+.main {
+  color: $main-color;
+  font-family: $main-font-family;
+  font-size: 1.05rem;
+  line-height: 1.7rem;
+
+  div,
+  p,
+  ul,
+  ol,
+  img {
+    display: block;
+    margin-bottom: 1rem;
+    max-width: 100%;
+  }
+
+  div {
+    margin: 2rem 0;
+  }
+
+  img {
+    height: auto;
+  }
+
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: $main-title-font-family;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding: 1rem 0 2rem 0;
+  }
+
+  ol,
+  ul {
+    padding-left: 1.5rem;
+
+    li {
+      padding-bottom: .75rem;
+    }
+  }
+
+  ul {
+    list-style-type: disc;
+  }
+
+  ol {
+    list-style-type: upper-roman;
+  }
+
+  b,
+  strong {
+    font-weight: bold;
+  }
+
+  i {
+    font-style: italic;
+  }
+
+  a {
+    color: $main-a-color;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  blockquote {
+    font-family: $main-blockquote-font-family;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  blockquote:before {
+    background: $color-ligth-gray;
+    content: '';
+    display: block;
+    height: 2px;
+    margin: 0 auto 1rem auto;
+    width: 200px;
+  }
+
+  .wp-caption-text {
+    font-family: $font-family-second;
+    font-size: .85rem;
+    font-style: italic;
+    line-height: 1.3rem;
+    margin: 0 0 1rem 0;
+    text-align: center;
+
+    a {
+      color: $color-dark-gray;
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+@media #{$breakpoints-large} {
+  .main {
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-size: 2rem;
+      line-height: 2.5rem;
+    }
+  }
+}

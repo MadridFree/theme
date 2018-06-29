@@ -1,0 +1,13 @@
+
+.flash {
+  animation: .2s flash 1s ease-in both;
+}
+
+@keyframes flash {
+  0% { 
+    opacity: 0;
+  } 
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,1 @@
+<div class="ads" style="width:300px;height:600px;"></div>

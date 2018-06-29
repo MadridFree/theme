@@ -1,0 +1,21 @@
+$category-link-color: $color-corporative;
+$category-link-font-family: $font-family-third;
+
+.category-link {
+  // Ocultando el resto de subcategorías (solo se muestra la primera).
+  
+  a {
+    color: $category-link-color;
+    display: none;
+    font-family: $category-link-font-family;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  a:first-child {
+    display: inline-block;
+  }
+}

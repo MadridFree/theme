@@ -1,7 +1,7 @@
 $header-background: $color-white;
 $header-wrap-max-width: $row-max;
 $header-wrap-width: $width-desktop;
-$header-logo-link-size: 35px;
+$header-logo-link-size: 37px;
 $header-nav-ul-before-left: 1rem solid $color-corporative;
 $header-nav-ul-before-bottom: .5rem solid transparent;
 $header-nav-ul-before-top: $header-nav-ul-before-bottom;
@@ -25,9 +25,10 @@ $header-nav-ul-before-top: $header-nav-ul-before-bottom;
   flex: 0 1 10%;
   min-width: 40px;
 }
+
 .header__nav {
   justify-content: flex-end;
-  display: flex;
+  display: none;
   flex: 0 1 90%;
   flex-flow: row nowrap;
 }
@@ -45,7 +46,7 @@ $header-nav-ul-before-top: $header-nav-ul-before-bottom;
 }
 
 .header__logo-link:hover {
-  transform: rotate(360deg) scale(.85);
+  transform: rotate(360deg);
 }
 
 .header__nav-link,
@@ -108,4 +109,10 @@ $header-nav-ul-before-top: $header-nav-ul-before-bottom;
   display: block;
   padding: 1rem 4rem;
   text-decoration: none;
+}
+
+@media #{$breakpoints-medium} {
+  .header__nav {
+    display: flex;
+  }
 }

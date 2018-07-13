@@ -15,7 +15,7 @@
           <?php the_title(); ?>
       </h2>
       <p class="article-list__paragraph">
-        <?php $text = get_the_excerpt(); if(strlen($text ) > 150) {$text = substr($text , 0, 250);} echo "$text"; ?>
+        <?php $text = get_the_excerpt(); if(strlen($text ) > 150) {$text = substr($text , 0, 250);} echo "$text"; ?>...
       </p>
     </a>
   </div>

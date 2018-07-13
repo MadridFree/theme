@@ -1,7 +1,7 @@
 <?php if (in_category('opinion')) {
   include (TEMPLATEPATH . '/single_opinion.php');
 }
-elseif (in_category('noticias-madrid')) {
+elseif (in_category('noticias')) {
   include (TEMPLATEPATH . '/single_noticias.php');
 }
 elseif (in_category('foto-de-la-semana')) {

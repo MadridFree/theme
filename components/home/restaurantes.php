@@ -9,7 +9,7 @@
       <?php endwhile; ?>
     </div>
     <div class="page-sidebar__read-more">
-      Puedes <a href="">ver todos los restaurantes</a> que hemos publicado.
+      Puedes <a href="https://www.madridfree.org/category/restaurantes-madrid/">ver todos los restaurantes</a> que hemos publicado.
     </div>
   </div>
 

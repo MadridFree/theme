@@ -11,7 +11,7 @@
         </h2>
     <?php endwhile; ?>
         <div class="destacado__minipost">
-          <?php $the_query = new WP_Query('showposts=3&offset=1'); while ($the_query->have_posts()) : $the_query->the_post();?>
+          <?php $the_query = new WP_Query('showposts=3&offset=1&cat=destacado'); while ($the_query->have_posts()) : $the_query->the_post();?>
             <div class="destacado__minipost-box">
               <div class="destacado__minipost-cat">
                 <?php get_template_part('atoms/category-link'); ?>

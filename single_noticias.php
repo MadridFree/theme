@@ -15,7 +15,6 @@
         <?php get_template_part('atoms/meta'); ?>
       </div>
       <div class="single-noticias__intro">
-        En nuestro país el año pasado 60 mujeres fueron asesinadas por sus parejas. Eso significa un asesinato a la semana. Ahora mismo viven en Madrid 6.800 mujeres con protección policial por violencia de género. Basta. Una sola víctima ya serían demasiadas.
         <?php the_field('desc-news', $event_id); ?>
       </div>
     </div>

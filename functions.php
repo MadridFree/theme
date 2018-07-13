@@ -2,7 +2,6 @@
 
 // Disable comments js
 function clean_header(){
-  wp_deregister_script( 'comment-reply' );
 }
 add_action('init','clean_header');
 

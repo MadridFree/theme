@@ -8,10 +8,10 @@
     <div class="restaurantes-list__content">
       <ul class="restaurantes-list__icons">
         <li class="restaurantes-list-li">
-          Comida italiana
+          —
         </li>
         <li class="restaurantes-list-li restaurantes-list-li--price">
-          30-40€
+          —
         </li>
       </ul>
       <h2 class="restaurantes-list__title">

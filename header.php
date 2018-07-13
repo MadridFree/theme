@@ -13,6 +13,7 @@
   <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
   <?php wp_get_archives('type=monthly&format=link'); ?>
+  <?php get_template_part('layout/header/tagmanager'); ?>
   <?php wp_head(); ?>
 </head>
 <body>
@@ -28,49 +29,24 @@
       <a href="" class="header__nav-link">
         Gratis
       </a>
-      <a href="" class="header__nav-link">
+      <a href="https://www.madridfree.org/category/restaurantes-madrid/" class="header__nav-link">
         Restaurantes
       </a>
-      <a href="" class="header__nav-link">
-        Teatro
+      <a href="https://www.madridfree.org/category/teatro/" class="header__nav-link">
+        Teatro y musicales
       </a>
-      <a href="" class="header__nav-link">
-        Opinión
+      <a href="https://www.madridfree.org/category/musica/" class="header__nav-link">
+        Música
       </a>
-      <a href="" class="header__nav-link">
-        Deportes
+      <a href="https://www.madridfree.org/category/deporte/" class="header__nav-link">
+        Deporte
       </a>
-      <div class="header__nav-more">
+      <div class="header__nav-more" style="display:none;">
         Ver más
         <ul class="header__nav-ul">
           <li class="header__nav-li">
             <a href="" class="header__nav-ul-a">
               Cine
-            </a>
-          </li>
-          <li class="header__nav-li">
-            <a href="" class="header__nav-ul-a">
-              Categoría
-            </a>
-          </li>
-          <li class="header__nav-li">
-            <a href="" class="header__nav-ul-a">
-              Teatro y musicales
-            </a>
-          </li>
-          <li class="header__nav-li">
-            <a href="" class="header__nav-ul-a">
-              Idontknow
-            </a>
-          </li>
-          <li class="header__nav-li">
-            <a href="" class="header__nav-ul-a">
-              Link
-            </a>
-          </li>
-          <li class="header__nav-li">
-            <a href="" class="header__nav-ul-a">
-              Link
             </a>
           </li>
         </ul>

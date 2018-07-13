@@ -7,7 +7,7 @@
       <?php get_template_part('components/article-list'); ?>
     <?php endwhile; ?>
     <div class="page-sidebar__read-more">
-      Puedes leer más sobre <a href="">deportes</a>, <a href="">conciertos</a>, <a href="">teatros</a> y <a href="">otros</a>.
+      Puedes leer más sobre <a href="https://www.madridfree.org/category/deporte/">deportes</a>, <a href="https://www.madridfree.org/category/musica/">conciertos</a> y <a href="https://www.madridfree.org/category/deporte/">teatros</a>.
     </div>
   </div>
   <div class="page-sidebar__ads">

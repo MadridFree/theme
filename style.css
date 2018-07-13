@@ -224,7 +224,7 @@ a {
 
 .header__nav {
   justify-content: flex-end;
-  display: flex;
+  display: none;
   flex: 0 1 90%;
   flex-flow: row nowrap; }
 
@@ -232,15 +232,15 @@ a {
   background: transparent url("assets/img/logo/madridfree-logo.png") no-repeat;
   background-size: 100%;
   display: inline-block;
-  height: 35px;
+  height: 37px;
   margin: .5rem 0;
   overflow: hidden;
   transition: transform .8s;
   text-indent: 9999px;
-  width: 35px; }
+  width: 37px; }
 
 .header__logo-link:hover {
-  transform: rotate(360deg) scale(0.85); }
+  transform: rotate(360deg); }
 
 .header__nav-link,
 .header__nav-more {
@@ -295,52 +295,21 @@ a {
   padding: 1rem 4rem;
   text-decoration: none; }
 
+@media only screen and (min-width: 768px) {
+  .header__nav {
+    display: flex; } }
 .footer {
   border-top: 1px solid #ccc;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
+  font-family: "Arimo", sans-serif;
+  font-size: .85rem;
   margin: 5rem auto;
   max-width: 1080px;
-  padding: .5rem 0;
+  padding: 3rem 0;
   width: 90%; }
 
-.footer__box {
-  flex: 0 1 50%; }
-
-.footer__list,
-.footer__rrss {
-  display: flex;
-  flex-flow: row wrap;
-  width: 100%; }
-
-.footer__rrss {
-  justify-content: flex-end; }
-
-.footer__rrss-li {
-  margin-left: 2rem; }
-
-.footer__list-li {
-  margin-right: 2rem; }
-
-.footer__list-a {
-  color: #ccc;
-  display: inline-block;
-  padding: .5rem 0;
-  font-family: "Work Sans", sans-serif;
-  font-size: .65rem;
-  text-decoration: none; }
-
-.footer__credits {
-  display: none;
-  font-family: "Arimo", sans-serif;
-  font-size: .75rem;
-  padding-top: 1rem; }
-
 .ads {
-  background: #ebf672;
   display: block;
-  margin: 1rem 0; }
+  margin: 1rem auto; }
 
 .ads--centered {
   margin: 1rem auto; }
@@ -1173,7 +1142,7 @@ a {
 
 .page-sidebar__read-more {
   font-family: "Playfair Display", serif;
-  font-size: 1.15rem;
+  font-size: .9rem;
   padding-top: 2rem;
   font-style: italic;
   color: #555555; }
@@ -1206,6 +1175,9 @@ a {
 
   .page-sidebar__title:after {
     margin: 0;
-    width: 40px; } }
+    width: 40px; }
+
+  .page-sidebar__read-more {
+    font-size: 1.10rem; } }
 
 /*# sourceMappingURL=style.css.map */

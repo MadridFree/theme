@@ -1,10 +1,9 @@
 $ads-background: $color-ads;
 $ads-whitespace: 1rem;
-$ads-margin: $ads-whitespace 0;
+$ads-margin: $ads-whitespace auto;
 $ads-margin-centered: $ads-whitespace auto;
 
 .ads {
-  background: $ads-background;
   display: block;
   margin: $ads-margin;
 }

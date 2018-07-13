@@ -50,7 +50,7 @@ $page-sidebar-content-max-width: $row-min;
 
 .page-sidebar__read-more {
   font-family: $font-family-second;
-  font-size: 1.15rem;
+  font-size: .9rem;
   padding-top: 2rem;
   font-style: italic;
   color: $color-dark-gray;
@@ -93,5 +93,9 @@ $page-sidebar-content-max-width: $row-min;
   .page-sidebar__title:after {
     margin: 0;
     width: 40px;
+  }
+
+  .page-sidebar__read-more {
+    font-size: 1.10rem;
   }
 }

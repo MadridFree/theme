@@ -32,4 +32,6 @@
   <?php endif; ?>
 </article>
 
+<?php get_template_part('ads/leaderboard'); ?>
+
 <?php get_footer(); ?>

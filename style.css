@@ -307,6 +307,58 @@ a {
   padding: 3rem 0;
   width: 90%; }
 
+.mobile-bar {
+  align-items: stretch;
+  background: #fff;
+  bottom: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  left: 0;
+  position: fixed;
+  text-align: center;
+  width: 100vw;
+  z-index: 50; }
+
+.mobile-bar__icon {
+  display: inline-block;
+  height: 15px;
+  fill: rgba(0, 0, 0, 0.4);
+  margin-right: .75rem;
+  transform: translateY(3px);
+  width: 15px; }
+  .mobile-bar__icon .icon {
+    transition: fill .2s; }
+  .mobile-bar__icon .icon-search {
+    height: calc( 15px + 3px );
+    transform: translateY(1px);
+    width: calc( 15px + 3px ); }
+
+.mobile-bar__link {
+  border-top: 3px solid #f0f0f0;
+  color: rgba(0, 0, 0, 0.4);
+  display: inline-block;
+  font-family: "Work Sans", sans-serif;
+  font-size: .75rem;
+  flex: 0 1 calc( 100%/2 );
+  padding: 1rem 0 calc( 1rem + 5px ) 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: border .2s; }
+
+.mobile-bar:hover .mobile-bar__link {
+  border-top: 3px solid #f0f0f0;
+  color: rgba(0, 0, 0, 0.4); }
+.mobile-bar:hover .mobile-bar__link--home:hover,
+.mobile-bar:hover .mobile-bar__link--search:hover {
+  border-top: 3px solid #f80000;
+  color: #f80000; }
+  .mobile-bar:hover .mobile-bar__link--home:hover .icon,
+  .mobile-bar:hover .mobile-bar__link--search:hover .icon {
+    fill: #f80000; }
+
+@media only screen and (min-width: 1024px) {
+  .mobile-bar {
+    display: none; } }
 .ads {
   display: block;
   margin: 1rem auto; }

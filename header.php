@@ -54,3 +54,5 @@
     </nav>
   </div>
 </header>
+
+<?php get_template_part('layout/mobile-bar'); ?>

@@ -17,6 +17,10 @@ $section-large-width-desktop: calc( 100% - #{$section-large-margin-left} );
   width: $section-large-width-mobile;
 }
 
+.section--related {
+  margin-top: 2rem;
+}
+
 @media #{$breakpoints-large} {
   .section--row {
     max-width: $section-row-max-width;

@@ -1,5 +1,5 @@
 <footer class="footer">
-  MadridFree © Creative Commons (by-sa).
+  MadridFree © Creative Commons (by-sa) <a href="<?php bloginfo('url'); ?>/about" class="footer__link">Sobre MadridFree</a>
 </footer>
 
 <link href="https://fonts.googleapis.com/css?family=Arimo|Playfair+Display|Work+Sans:700" rel="stylesheet">

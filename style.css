@@ -179,19 +179,19 @@ body {
 a {
   color: inherit; }
 
-.layout-grid, .about,
+.layout-grid, .ads--centered, .about,
 .layout-content,
 .about__content {
   padding-left: 20px;
   padding-right: 20px; }
 
 @media only screen and (min-width: 1024px) {
-  .layout-grid, .about,
+  .layout-grid, .ads--centered, .about,
   .layout-content,
   .about__content {
     margin: auto; }
 
-  .layout-grid, .about {
+  .layout-grid, .ads--centered, .about {
     max-width: 1080px; }
 
   .layout-content, .about__content {
@@ -314,16 +314,38 @@ a {
 
 @media only screen and (min-width: 768px) {
   .header__nav {
-    display: flex; } }
+    display: flex; }
+
+  .header__about {
+    display: none; } }
 .footer {
-  border-top: 1px solid #ccc;
-  font-family: "Arimo", sans-serif;
+  color: #555555;
+  font-family: "Work Sans", sans-serif;
   font-size: .85rem;
   margin: 5rem auto;
   max-width: 1080px;
   padding: 3rem 0;
-  width: 90%; }
+  width: 90%;
+  text-align: center; }
 
+.footer__link {
+  color: #555555;
+  background: #fff;
+  padding: .25rem;
+  display: none;
+  margin-left: 1rem;
+  text-decoration: none;
+  transition: color .2s, background .2s; }
+  .footer__link:hover {
+    background: #f80000;
+    color: #fff; }
+
+@media only screen and (min-width: 1024px) {
+  .footer {
+    padding: 5rem 0; }
+
+  .footer__link {
+    display: inline-block; } }
 .mobile-bar {
   align-items: stretch;
   background: #fff;
@@ -378,7 +400,10 @@ a {
     display: none; } }
 .ads {
   display: block;
-  margin: 1rem auto; }
+  margin: 1rem auto;
+  background: #ebf672;
+  min-height: 20px;
+  text-align: center; }
 
 .ads--centered {
   margin: 1rem auto; }
@@ -576,6 +601,9 @@ a {
 
 .section--large {
   width: 100%; }
+
+.section--related {
+  margin-top: 2rem; }
 
 @media only screen and (min-width: 1024px) {
   .section--row {
@@ -864,12 +892,13 @@ a {
     color: #555555;
     display: block;
     font-size: 1rem;
-    padding: 1rem;
+    padding: 1.25rem 1rem;
     transition: border .2s;
     width: 100%; }
     .page-search__content input:focus {
       border: 2px solid #f80000;
-      background: #fff; }
+      background: #fff;
+      color: #000; }
 
 .page-search__subtitle {
   color: rgba(0, 0, 0, 0.4);
@@ -1307,25 +1336,88 @@ a {
   .page-sidebar__read-more {
     font-size: 1.10rem; } }
 .about {
-  padding: 5rem 0; }
+  padding: 5rem 0;
+  position: relative;
+  z-index: 15; }
+
+.about__bck {
+  background: transparent url("assets/img/about/plaza-mayor-madrid.jpg") top center no-repeat;
+  background-size: cover;
+  position: relative; }
+  .about__bck:after, .about__bck:before {
+    width: 100%;
+    position: absolute;
+    content: '';
+    display: block;
+    left: 0;
+    background: linear-gradient(white, rgba(255, 255, 255, 0));
+    z-index: 10; }
+  .about__bck:before {
+    height: 500px;
+    top: 0; }
+  .about__bck:after {
+    height: 100%;
+    bottom: 0; }
 
 .about__title {
   font-family: "Work Sans", sans-serif;
-  font-size: 2rem;
-  line-height: 2rem;
+  font-size: 2.75rem;
+  line-height: 2.75rem;
   margin: 2rem auto 4rem auto;
   max-width: 600px;
   text-align: center;
   width: 90%; }
 
+.about__subtitle {
+  color: #000;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1rem;
+  padding: 4rem 0;
+  text-align: center;
+  text-transform: uppercase; }
+
+.about__list-of-box {
+  justify-content: space-between;
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center; }
+
+.about__box {
+  flex: 0 1 30%;
+  padding: 2rem 0; }
+
+.about__number {
+  font-family: "Work Sans", sans-serif;
+  font-size: 4rem;
+  letter-spacing: -2px;
+  color: #000; }
+
+.about__desc {
+  color: #555555;
+  font-family: "Arimo", sans-serif;
+  font-size: 1rem;
+  padding-top: 1rem; }
+
 @media only screen and (min-width: 768px) {
   .about__title {
-    font-size: 3rem;
-    line-height: 3rem; } }
+    font-size: 3.5rem;
+    line-height: 3.5rem; }
+
+  .about__list-of-box {
+    flex-flow: row wrap; }
+
+  .about__box {
+    flex: 0 1 40%; } }
 @media only screen and (min-width: 1024px) {
   .about__title {
     font-size: 4rem;
-    line-height: 4rem; } }
+    line-height: 4rem; }
+
+  .about__number {
+    font-size: 5rem; }
+
+  .about__box {
+    flex: 0 1 30%; } }
 @media only screen and (min-width: 1280px) {
   .about__title {
     font-size: 5rem;

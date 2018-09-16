@@ -115,4 +115,8 @@ $header-nav-ul-before-top: $header-nav-ul-before-bottom;
   .header__nav {
     display: flex;
   }
+
+  .header__about {
+    display: none;
+  }
 }

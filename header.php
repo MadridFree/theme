@@ -25,6 +25,9 @@
         madridfree
       </a>
     </div>
+    <nav class="header__about">
+      <a href="<?php bloginfo('url'); ?>/about" class="header__nav-link">Sobre MadridFree</a>
+    </nav>
     <nav class="header__nav">
       <a href="" class="header__nav-link">
         Gratis
@@ -62,9 +65,12 @@
 
 <div class="nav-oculto page-search">
   <div class="page-search__content">
+    <div class="page-search__subtitle">
+        Buscador
+      </div>
     <div class="page-search__form">
       <form role="search" method="get" id="searchform" class="search-form__form" action="<?php bloginfo('url'); ?>">
-        <input placeholder="Buscar" type="text" value="" name="s" id="s" class="search-form__input">
+        <input placeholder="Buscar en el blog" type="text" value="" name="s" id="s" class="search-form__input">
       </form>
       <div class="page-search__subtitle">
         Buscar por categorías

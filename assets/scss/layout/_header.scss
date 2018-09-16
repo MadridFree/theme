@@ -55,7 +55,7 @@ $header-nav-ul-before-top: $header-nav-ul-before-bottom;
   color: $color-ligth-gray;
   font-family: $font-family-third;
   font-size: .85rem;
-  padding: 1.25rem 1.5rem;
+  padding: 1.25rem;
   text-decoration: none;
   transition: color .2s, border .2s;
 }
@@ -114,5 +114,9 @@ $header-nav-ul-before-top: $header-nav-ul-before-bottom;
 @media #{$breakpoints-medium} {
   .header__nav {
     display: flex;
+  }
+
+  .header__about {
+    display: none;
   }
 }

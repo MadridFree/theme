@@ -20,6 +20,10 @@ $breakpoints-xxxlarge: "only screen and (min-width: #{$size-xxxlarge})";
 $row-max: 1080px;
 $row-min: 680px;
 
+// mobile first
+
+$grid-mobile: 20px;
+
 // flex-grid
 
 $gutter: 1rem;
@@ -28,3 +32,24 @@ $gutter: 1rem;
 
 $width-mobile: 95%;
 $width-desktop: 90%;
+
+.layout-grid,
+.layout-content {
+  padding-left: $grid-mobile;
+  padding-right: $grid-mobile;
+}
+
+@media #{$breakpoints-large} {
+  .layout-grid,
+  .layout-content {
+    margin: auto;
+  }
+
+  .layout-grid {
+    max-width: $row-max;
+  }
+
+  .layout-content {
+    max-width: $row-min;
+  }
+}

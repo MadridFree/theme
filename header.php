@@ -41,6 +41,9 @@
       <a href="https://www.madridfree.org/category/deporte/" class="header__nav-link">
         Deporte
       </a>
+      <a href="https://madridfree.org/category/cine/" class="header__nav-link">
+        Cine
+      </a>
       <div class="header__nav-more" style="display:none;">
         Ver más
         <ul class="header__nav-ul">
@@ -56,3 +59,19 @@
 </header>
 
 <?php get_template_part('layout/mobile-bar'); ?>
+
+<div class="nav-oculto page-search">
+  <div class="page-search__content">
+    <div class="page-search__form">
+      <form role="search" method="get" id="searchform" class="search-form__form" action="<?php bloginfo('url'); ?>">
+        <input placeholder="Buscar" type="text" value="" name="s" id="s" class="search-form__input">
+      </form>
+      <div class="page-search__subtitle">
+        Buscar por categorías
+      </div>
+      <ul class="page-search__list">
+        <?php wp_list_categories( array('title_li' => '')); ?>
+      </ul>
+    </div>
+  </div>
+</div>

@@ -1,10 +1,11 @@
 $mobile-bar-link-border-top: 3px solid #f0f0f0;
 $mobile-bar-link-hover-border-top: 3px solid $color-corporative;
 $mobile-bar-icon-size: 15px;
+$mobile-bar-background: $color-white;
 
 .mobile-bar {
   align-items: stretch;
-  background: $color-white;
+  background: $mobile-bar-background;
   bottom: 0;
   display: flex;
   flex-flow: row nowrap;

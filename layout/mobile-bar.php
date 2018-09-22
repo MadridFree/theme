@@ -1,5 +1,5 @@
 <nav class="mobile-bar">
-  <a href="" class="mobile-bar__link mobile-bar__link--home">
+  <a href="<?php bloginfo('url'); ?>" class="mobile-bar__link mobile-bar__link--home">
     <div class="mobile-bar__icon">
       <?php get_template_part('assets/svg/home'); ?>
     </div>

@@ -238,7 +238,7 @@ a {
   flex-flow: row nowrap; }
 
 .header__logo-link {
-  background: transparent url("../img/logo/madridfree-logo.png") no-repeat;
+  background: transparent url("assets/img/logo/madridfree-logo.png") no-repeat;
   background-size: 100%;
   display: inline-block;
   height: 37px;

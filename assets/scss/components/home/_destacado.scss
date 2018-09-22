@@ -89,7 +89,7 @@ $destacado-sms-font-family: $font-family-third;
 .destacado__minipost {
   display: flex;
   flex-flow: column wrap;
-  padding: 2rem 0;
+  padding: 2rem 0 0 0;
   justify-content: space-between;
   transition: opacity .5s;
 }
@@ -100,7 +100,6 @@ $destacado-sms-font-family: $font-family-third;
 
 .destacado__minipost-box {
   flex: 0 1 30%;
-  padding-bottom: 2rem;
 }
 
 .destacado__minipost-cat {

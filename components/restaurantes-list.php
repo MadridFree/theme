@@ -8,10 +8,10 @@
     <div class="restaurantes-list__content">
       <ul class="restaurantes-list__icons">
         <li class="restaurantes-list-li">
-          —
+          <?php the_field('estilo'); ?>
         </li>
         <li class="restaurantes-list-li restaurantes-list-li--price">
-          —
+          <?php the_field('rango_precio'); ?>
         </li>
       </ul>
       <h2 class="restaurantes-list__title">

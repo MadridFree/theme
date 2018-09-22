@@ -13,8 +13,9 @@ Esto es un theme de Wordpress hecho para [MadridFree.org](http://madridfree.org)
 **Compilar SASS**
 
 ```
-brew install --devel sass/sass/sass
-sass -wc madirdfree
+$ brew install --devel sass/sass/sass
+$ cd assets
+$ sass -wc scss
 ```
 
 ### Créditos

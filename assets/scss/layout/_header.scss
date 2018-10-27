@@ -34,8 +34,8 @@ $header-nav-ul-before-top: $header-nav-ul-before-bottom;
 }
 
 .header__logo-link {
-  background: transparent url('../img/logo/madridfree-logo.png') no-repeat;
-  background-size: 100%;
+  background: transparent url('../img/logo/madridfree-logo.png') center no-repeat;
+  background-size: 100% auto;
   display: inline-block;
   height: $header-logo-link-size;
   margin: .5rem 0;

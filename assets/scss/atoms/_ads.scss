@@ -6,13 +6,9 @@ $ads-margin-centered: $ads-whitespace auto;
 .ads {
   display: block;
   margin: $ads-margin;
-  background: $ads-background;
-  min-height: 20px;
   text-align: center;
 }
 
 .ads--centered {
   @extend .layout-grid;
-
-  margin: $ads-margin-centered;
 }

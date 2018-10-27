@@ -47,16 +47,6 @@
       <a href="https://madridfree.org/category/cine/" class="header__nav-link">
         Cine
       </a>
-      <div class="header__nav-more" style="display:none;">
-        Ver más
-        <ul class="header__nav-ul">
-          <li class="header__nav-li">
-            <a href="" class="header__nav-ul-a">
-              Cine
-            </a>
-          </li>
-        </ul>
-      </div>
     </nav>
   </div>
 </header>

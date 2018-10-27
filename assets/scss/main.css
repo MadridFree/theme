@@ -238,8 +238,8 @@ a {
   flex-flow: row nowrap; }
 
 .header__logo-link {
-  background: transparent url("assets/img/logo/madridfree-logo.png") no-repeat;
-  background-size: 100%;
+  background: transparent url("../img/logo/madridfree-logo.png") center no-repeat;
+  background-size: 100% auto;
   display: inline-block;
   height: 37px;
   margin: .5rem 0;
@@ -393,12 +393,7 @@ a {
 .ads {
   display: block;
   margin: 1rem auto;
-  background: #ebf672;
-  min-height: 20px;
   text-align: center; }
-
-.ads--centered {
-  margin: 1rem auto; }
 
 .picture {
   background: #f0f0f0;
@@ -671,7 +666,7 @@ a {
 .destacado__minipost {
   display: flex;
   flex-flow: column wrap;
-  padding: 2rem 0;
+  padding: 2rem 0 0 0;
   justify-content: space-between;
   transition: opacity .5s; }
 
@@ -679,8 +674,7 @@ a {
   opacity: 0; }
 
 .destacado__minipost-box {
-  flex: 0 1 30%;
-  padding-bottom: 2rem; }
+  flex: 0 1 30%; }
 
 .destacado__minipost-cat {
   font-size: .85rem;

@@ -2,9 +2,8 @@
 <html xmlns:fb="http://ogp.me/ns/fb#" lang="es">
 <head>
   <link rel="shortcut icon" href="<?php bloginfo( template_directory ); ?>/favicon.ico" type="image/png">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
   <title><?php wp_title(); ?></title>
-
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>" />
   <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php bloginfo('rss2_url'); ?>" />
@@ -13,7 +12,7 @@
   <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
   <?php wp_get_archives('type=monthly&format=link'); ?>
-  <?php get_template_part('layout/header/tagmanager'); ?>
+  <?php get_template_part('partials/header/tagmanager'); ?>
   <?php wp_head(); ?>
 </head>
 <body>
@@ -51,7 +50,7 @@
   </div>
 </header>
 
-<?php get_template_part('layout/mobile-bar'); ?>
+<?php get_template_part('partials/header/mobile-bar'); ?>
 
 <div class="nav-oculto page-search">
   <div class="page-search__content">

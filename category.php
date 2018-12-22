@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<?php get_template_part('ads/leaderboard'); ?>
+<?php get_template_part('partials/ads/leaderboard'); ?>
 
 <section class="section page-sidebar">
   <div class="page-sidebar__content">

@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<?php get_template_part('ads/leaderboard'); ?>
+<?php get_template_part('partials/ads/leaderboard'); ?>
 
 <section class="section page-sidebar">
   <div class="page-sidebar__content">
@@ -7,15 +7,15 @@
       Has buscado '<?php printf(get_search_query()); ?>'
     </h1>
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-      <?php get_template_part('components/article-list'); ?>
+      <?php get_template_part('partials/components/article-list'); ?>
     <?php endwhile; ?>
   </div>
   <div class="page-sidebar__ads">
-    <?php get_template_part('ads/media-pag'); ?>
+    <?php get_template_part('partials/ads/media-pag'); ?>
   </div>
 </section>
 
-<?php get_template_part('components/category-nav'); ?>
+<?php get_template_part('partials/components/category-nav'); ?>
 
 <?php  else: ?>
   <?php _e('Lo sentimos, no hay resultados con este término de búsqueda.'); ?>

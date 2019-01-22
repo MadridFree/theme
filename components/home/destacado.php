@@ -1,5 +1,5 @@
 <section class="section destacado">
-    <?php $the_query = new WP_Query('showposts=1&cat=destacado'); while ($the_query->have_posts()) : $the_query->the_post();?>
+    <?php $the_query = new WP_Query('showposts=1&cat=727'); while ($the_query->have_posts()) : $the_query->the_post();?>
       <div class="destacado__content">
         <div class="destacado__sms">
           Destacamos

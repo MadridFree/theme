@@ -1,7 +1,7 @@
 $header-background: $color-white;
 $header-wrap-max-width: $row-max;
 $header-wrap-width: $width-desktop;
-$header-logo-link-size: 37px;
+$header-logo-link-size: 40px;
 $header-nav-ul-before-left: 1rem solid $color-corporative;
 $header-nav-ul-before-bottom: .5rem solid transparent;
 $header-nav-ul-before-top: $header-nav-ul-before-bottom;
@@ -35,11 +35,11 @@ $header-nav-ul-before-top: $header-nav-ul-before-bottom;
 
 .header__logo-link {
   background: transparent url('../img/logo/madridfree-logo.png') center no-repeat;
-  background-size: 100% auto;
+  background-size: auto 100%;
   display: inline-block;
   height: $header-logo-link-size;
-  margin: .5rem 0;
   overflow: hidden;
+  margin: .25rem 0;
   transition: transform .8s;
   text-indent: 9999px;
   width: $header-logo-link-size;
@@ -118,5 +118,9 @@ $header-nav-ul-before-top: $header-nav-ul-before-bottom;
 
   .header__about {
     display: none;
+  }
+
+  .header__logo-link {
+    height: 44px;
   }
 }

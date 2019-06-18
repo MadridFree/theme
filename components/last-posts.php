@@ -3,7 +3,7 @@
     <h3 class="page-sidebar__title">
       Últimos artículos publicados
     </h3>
-    <?php $the_query = new WP_Query('showposts=3'); while ($the_query->have_posts()) : $the_query->the_post();?>
+    <?php $the_query = new WP_Query('showposts=6'); while ($the_query->have_posts()) : $the_query->the_post();?>
       <?php get_template_part('components/article-list'); ?>
     <?php endwhile; ?>
   </div>

@@ -10,6 +10,12 @@ $main-blockquote-font-family: $font-family-second;
   font-size: 1.05rem;
   line-height: 1.7rem;
 
+  iframe,
+  embed {
+    max-width: 100%;
+    width: 100%;
+  }
+  
   div,
   p,
   ul,

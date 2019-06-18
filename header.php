@@ -17,7 +17,6 @@
   <?php wp_head(); ?>
 </head>
 <body>
-
 <header class="header">
   <div class="header__wrap">
     <div class="header__logo">
@@ -29,7 +28,7 @@
       <a href="<?php bloginfo('url'); ?>/about" class="header__nav-link">Sobre MadridFree</a>
     </nav>
     <nav class="header__nav">
-      <a href="" class="header__nav-link">
+      <a href="https://www.madridfree.org/category/gratis" class="header__nav-link">
         Gratis
       </a>
       <a href="https://www.madridfree.org/category/restaurantes-madrid/" class="header__nav-link">

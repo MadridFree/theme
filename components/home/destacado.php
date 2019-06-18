@@ -1,5 +1,6 @@
+<!-- &cat=727 -->
 <section class="section destacado">
-    <?php $the_query = new WP_Query('showposts=1&cat=727'); while ($the_query->have_posts()) : $the_query->the_post();?>
+    <?php $the_query = new WP_Query('showposts=1'); while ($the_query->have_posts()) : $the_query->the_post();?>
       <div class="destacado__content">
         <div class="destacado__sms">
           Destacamos
@@ -11,7 +12,7 @@
         </h2>
     <?php endwhile; ?>
         <div class="destacado__minipost">
-          <?php $the_query = new WP_Query('showposts=3&offset=1&cat=727'); while ($the_query->have_posts()) : $the_query->the_post();?>
+          <?php $the_query = new WP_Query('showposts=3&offset=1'); while ($the_query->have_posts()) : $the_query->the_post();?>
             <div class="destacado__minipost-box">
               <div class="destacado__minipost-cat">
                 <?php get_template_part('atoms/category-link'); ?>
@@ -25,7 +26,7 @@
           <?php endwhile; ?>
         </div>
       </div>
-      <?php $the_query = new WP_Query('showposts=1&cat=727'); while ($the_query->have_posts()) : $the_query->the_post();?>
+      <?php $the_query = new WP_Query('showposts=1'); while ($the_query->have_posts()) : $the_query->the_post();?>
         <picture class="destacado__thumb">
           <?php the_post_thumbnail('xxlarge', array( 'class' => 'no-lazy' )); ?>
         </picture>

@@ -100,6 +100,7 @@ $destacado-sms-font-family: $font-family-third;
 
 .destacado__minipost-box {
   flex: 0 1 30%;
+  margin-bottom: 2rem;
 }
 
 .destacado__minipost-cat {
@@ -141,6 +142,10 @@ $destacado-sms-font-family: $font-family-third;
   .destacado__big-title {
     font-size: 4rem;
     line-height: 4.5rem;
+  }
+
+  .destacado__minipost-box {
+    margin-bottom: 0;
   }
 }
 

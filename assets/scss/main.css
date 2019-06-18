@@ -171,19 +171,19 @@ body {
 a {
   color: inherit; }
 
-.layout-grid, .ads--centered, .about,
+.layout-grid, .about,
 .layout-content,
 .about__content {
   padding-left: 20px;
   padding-right: 20px; }
 
 @media only screen and (min-width: 1024px) {
-  .layout-grid, .ads--centered, .about,
+  .layout-grid, .about,
   .layout-content,
   .about__content {
     margin: auto; }
 
-  .layout-grid, .ads--centered, .about {
+  .layout-grid, .about {
     max-width: 1080px; }
 
   .layout-content, .about__content {
@@ -239,14 +239,14 @@ a {
 
 .header__logo-link {
   background: transparent url("../img/logo/madridfree-logo.png") center no-repeat;
-  background-size: 100% auto;
+  background-size: auto 100%;
   display: inline-block;
-  height: 37px;
-  margin: .5rem 0;
+  height: 40px;
   overflow: hidden;
+  margin: .25rem 0;
   transition: transform .8s;
   text-indent: 9999px;
-  width: 37px; }
+  width: 40px; }
 
 .header__logo-link:hover {
   transform: rotate(360deg); }
@@ -309,7 +309,10 @@ a {
     display: flex; }
 
   .header__about {
-    display: none; } }
+    display: none; }
+
+  .header__logo-link {
+    height: 44px; } }
 .footer {
   color: #555555;
   font-family: "Work Sans", sans-serif;
@@ -392,8 +395,9 @@ a {
     display: none; } }
 .ads {
   display: block;
-  margin: 1rem auto;
-  text-align: center; }
+  text-align: center;
+  width: 90%;
+  margin: auto; }
 
 .picture {
   background: #f0f0f0;
@@ -414,6 +418,10 @@ a {
   font-family: "Arimo", sans-serif;
   font-size: 1.05rem;
   line-height: 1.7rem; }
+  .main iframe,
+  .main embed {
+    max-width: 100%;
+    width: 100%; }
   .main div,
   .main p,
   .main ul,
@@ -559,10 +567,10 @@ a {
     line-height: 2.5rem; }
 
   .article-list__thumb {
-    flex: 0 1 40%; }
+    flex: 0 1 25%; }
 
   .article-list__content {
-    flex: 0 1 60%; }
+    flex: 0 1 70%; }
 
   .article-list__picture {
     position: relative;
@@ -674,7 +682,8 @@ a {
   opacity: 0; }
 
 .destacado__minipost-box {
-  flex: 0 1 30%; }
+  flex: 0 1 30%;
+  margin-bottom: 2rem; }
 
 .destacado__minipost-cat {
   font-size: .85rem;
@@ -703,7 +712,10 @@ a {
 
   .destacado__big-title {
     font-size: 4rem;
-    line-height: 4.5rem; } }
+    line-height: 4.5rem; }
+
+  .destacado__minipost-box {
+    margin-bottom: 0; } }
 @media only screen and (min-width: 1280px) {
   .destacado__big-title {
     font-size: 4.25rem;
@@ -937,10 +949,11 @@ a {
   max-width: 90%;
   padding-bottom: 2rem; }
 
-.single-default__meta {
+.single-default__meta,
+.single-opinion__meta {
   color: rgba(0, 0, 0, 0.4);
   font-family: "Arimo", sans-serif;
-  font-size: 1rem; }
+  font-size: .85rem; }
 
 .single-default__main {
   max-width: 680px;

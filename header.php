@@ -17,6 +17,8 @@
   <?php wp_head(); ?>
 </head>
 <body>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
 <header class="header">
   <div class="header__wrap">
     <div class="header__logo">

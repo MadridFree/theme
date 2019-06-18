@@ -5,10 +5,8 @@ $ads-margin-centered: $ads-whitespace auto;
 
 .ads {
   display: block;
-  margin: $ads-margin;
   text-align: center;
+  width: 90%;
+  margin: auto;
 }
 
-.ads--centered {
-  @extend .layout-grid;
-}

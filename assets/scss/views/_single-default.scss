@@ -33,10 +33,11 @@ $single-default-width-desktop: calc( 100% - #{$single-default-margin-left} );
   padding-bottom: 2rem;
 }
 
-.single-default__meta {
+.single-default__meta,
+.single-opinion__meta {
   color: $single-default-meta-color;
   font-family: $single-default-meta-font-family;
-  font-size: 1rem;
+  font-size: .85rem;
 }
 
 .single-default__main {

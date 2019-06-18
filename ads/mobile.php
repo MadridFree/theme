@@ -1,6 +1,12 @@
-<div class="ads" style="width:320px;height:100px;">
-  <ins class="adsbygoogle"
-     style="display:inline-block;width:320px;height:100px"
-     data-ad-client="ca-pub-1300504758348232"
-     data-ad-slot="3980145601"></ins>
+<div class="ads">
+  <!-- mf-mobile -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1590970202493938"
+     data-ad-slot="6553255392"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 </div>

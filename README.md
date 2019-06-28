@@ -20,7 +20,5 @@ $ sass -wc scss
 
 ## Quejas
 
-**Alex M. Gorgal**
-
 - [twitter.com/gruncho](http://github.com/gruncho)
 - [github.com/gruncho](http://twitter.com/gruncho)

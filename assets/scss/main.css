@@ -395,9 +395,10 @@ a {
     display: none; } }
 .ads {
   display: block;
+  margin: auto;
+  padding: .5rem 1rem;
   text-align: center;
-  width: 90%;
-  margin: auto; }
+  width: 90%; }
 
 .picture {
   background: #f0f0f0;

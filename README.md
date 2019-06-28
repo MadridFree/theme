@@ -18,10 +18,9 @@ $ cd assets
 $ sass -wc scss
 ```
 
-### Créditos
+## Quejas
 
 **Alex M. Gorgal**
 
-- [alex@madridfree.org](mailto:alex@madridfree.org)
 - [twitter.com/gruncho](http://github.com/gruncho)
 - [github.com/gruncho](http://twitter.com/gruncho)

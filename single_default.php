@@ -17,6 +17,9 @@
   		<div class="main single-default__main">
   	     <?php the_content("Sigue leyendo"); ?>
   		</div>
+      <div class="single__tags">
+        <?php the_tags('<span>Etiquetas</span>', '', ''); ?>
+      </div>
     </div>
     <div class="single-default__ads">
       <?php get_template_part('ads/media-pag'); ?>

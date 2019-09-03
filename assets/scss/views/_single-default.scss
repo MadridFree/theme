@@ -47,6 +47,44 @@ $single-default-width-desktop: calc( 100% - #{$single-default-margin-left} );
   margin-top: 1rem;
 }
 
+.single__tags {
+  max-width: $single-default-main;
+  padding-top: .5rem;
+  font-family: $category-link-font-family;
+  font-size: .75rem;
+  line-height: 1.25rem;
+  color: $color-ligth-gray;
+
+  span {
+    display: block;
+    margin-bottom: .25rem;
+    margin-right: .25rem;
+  } 
+
+  a {
+    color: $color-corporative;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 .5rem .25rem 0;
+    position: relative;
+
+    &:after {
+      position: absolute;
+      width: 0;
+      left: 0;
+      bottom: 0;
+      height: 1px;
+      background: red;
+      content: '';
+      transition: width .7s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+
+    &:hover:after {
+      width: 100%;
+    }
+  }
+} 
+
 @media #{$breakpoints-medium} {
   .single-default__title {
     font-size: 2.75rem;

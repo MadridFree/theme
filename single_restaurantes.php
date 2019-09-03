@@ -18,12 +18,12 @@
         </div>
       </div>
     </picture>
-    <div class="single-noticias__credits-photo">
-      Fotografía por Chenoa ©
-    </div>
     <div class="single-restaurantes__content single-restaurantes__content--sidebar">
       <div class="main single-restaurantes__main">
          <?php the_content("Sigue leyendo"); ?>
+      </div>
+      <div class="single__tags">
+        <?php the_tags('<span>Etiquetas</span>', '', ''); ?>
       </div>
       <?php get_template_part('components/last-news'); ?>
     </div>

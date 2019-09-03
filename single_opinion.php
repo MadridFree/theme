@@ -20,6 +20,9 @@
       <div class="single-opinion__date">
         Madrid, <?php the_time('d \d\e F \d\e Y'); ?>.
       </div>
+      <div class="single__tags">
+        <?php the_tags('<span>Etiquetas</span>', '', ''); ?>
+      </div>
     </div>
   <?php endwhile; else: ?>
     <?php include (TEMPLATEPATH . '/404.php'); ?>
